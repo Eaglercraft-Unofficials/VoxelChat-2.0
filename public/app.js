@@ -12,7 +12,7 @@ function addMessage(role, text) {
 
   const label = document.createElement('span');
   label.className = 'role';
-  label.textContent = role === 'user' ? 'You' : 'VoxelChat 2.0';
+  label.textContent = role === 'user' ? 'You' : 'VoxelChat';
 
   const body = document.createElement('div');
   body.textContent = text;
@@ -29,7 +29,7 @@ async function loadModels() {
     const data = await response.json();
 
     if (!response.ok) {
-      throw new Error(data.error || 'Failed to load models!');
+      throw new Error(data.error || 'Failed to load models.');
     }
 
     activeModels = data.models || [];
