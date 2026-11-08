@@ -28,3 +28,11 @@ Open **Image studio** and configure an image API base URL, image model, and API 
 GitHub Pages is static hosting; it cannot securely store API keys or hide provider requests behind a server. Keys are saved in this browser's local storage and sent directly to the chosen provider. Use a restricted key, avoid shared devices, and never commit keys to this repository. For a public production app, put provider calls behind a backend you control, with authentication, rate limiting, and secret management.
 
 Chat history and settings are stored in the browser's local storage. Clearing site data removes them. Model availability, pricing, and image-generation support are determined by the selected provider.
+
+<details>
+
+<summary>VoxelChat Credits</summary>
+
+<br>
+
+Credits to @the-creative-master, @UserArham, and the development team.
