@@ -69,6 +69,6 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`VoxelChat running at http://localhost:${PORT}`);
+  console.log(`Local files of VoxelChat is running at http://localhost:${PORT}`);
   console.log(`Using Ollama at ${OLLAMA_BASE_URL}`);
 });
