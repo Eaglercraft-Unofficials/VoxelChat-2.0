@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101114">
-  <meta name="description" content="VoxelChat — a customizable AI chat and image studio for hundreds of models.">
+  <meta name="description" content="VoxelChat — a customizable AI chat and image studio for thousands of models.">
   <title>VoxelChat 2.0— AI Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 <body>
   <div class="app-shell">
     <aside class="sidebar" id="sidebar">
-      <a class="brand" href="./" aria-label="VoxelChat home"><span class="brand-mark">V</span><span>voxel<span class="brand-light">chat</span></span></a>
+      <a class="brand" href="./" aria-label="VoxelChat Home"><span class="brand-mark">V</span><span>Voxel<span class="brand-light">chat</span></span></a>
       <button class="new-chat" id="newChat"><span>＋</span> New chat <kbd>⌘ K</kbd></button>
       <div class="side-label">WORKSPACE</div>
       <button class="nav-item active" data-view="chat"><span class="nav-icon">◈</span> Chat</button>
@@ -30,7 +30,7 @@
       <header class="topbar">
         <button class="icon-button mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
         <div class="breadcrumbs"><span>Workspace</span><span class="crumb-sep">/</span><b id="viewTitle">Chat</b></div>
-        <div class="top-actions"><span class="connection"><i id="connectionDot"></i><span id="connectionText">Set up a provider</span></span><button class="icon-button" id="settingsTop" aria-label="Settings">⚙</button></div>
+        <div class="top-actions"><span class="connection"><i id="connectionDot"></i><span id="connectionText">Set up a provider</span></span><button class="icon-button" id="settingsTop" aria-label="Settings">◉</button></div>
       </header>
 
       <section id="chatView" class="view chat-view">
@@ -66,7 +66,7 @@
   <div class="modal-backdrop hidden" id="settingsModal" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
     <div class="settings-modal"><div class="modal-header"><div><div class="welcome-kicker">PERSONALIZE YOUR WORKSPACE</div><h2 id="settingsTitle">Settings</h2></div><button class="icon-button" id="closeSettings" aria-label="Close settings">×</button></div>
       <div class="settings-content"><p class="settings-intro">Connect an OpenAI-compatible provider. Keys are stored in this browser only and sent directly from your browser to the provider.</p>
-        <label class="field-label" for="providerPreset">CHAT PROVIDER</label><select class="field" id="providerPreset"><option value="openrouter">OpenRouter — hundreds of models</option><option value="openai">OpenAI</option><option value="custom">Custom OpenAI-compatible API</option><option value="ollama">Ollama (local; requires browser CORS setup)</option></select>
+        <label class="field-label" for="providerPreset">CHAT PROVIDER</label><select class="field" id="providerPreset"><option value="openrouter">OpenRouter — hundreds or thousands of models</option><option value="openai">OpenAI - Connect a GPT API key</option><option value="custom">Custom OpenAI-compatible API - Connect via API</option><option value="ollama">Ollama (Local; Requires browser CORS setup)</option></select>
         <label class="field-label" for="apiBase">CHAT API BASE URL</label><input class="field" id="apiBase" type="url" placeholder="https://openrouter.ai/api/v1">
         <label class="field-label" for="apiKey">CHAT API KEY <span class="optional">optional for local Ollama</span></label><input class="field" id="apiKey" type="password" autocomplete="off" placeholder="Paste your provider key">
         <label class="field-label" for="imageBase">IMAGE GENERATION API BASE URL</label><input class="field" id="imageBase" type="url" placeholder="https://api.openai.com/v1">
