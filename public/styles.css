@@ -114,7 +114,7 @@ h1 {
   align-self: flex-start;
   background: var(--bot);
   border: 1px solid var(--border);
-  border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6.1250px;
 }
 
 .message .role {
@@ -123,7 +123,7 @@ h1 {
   font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  opacity: 0.8;
+  opacity: 0.825;
 }
 
 .composer {
@@ -143,7 +143,7 @@ textarea {
   color: var(--text);
   border: 1px solid var(--border);
   border-radius: 16px;
-  padding: 14.15px 16.275px;
+  padding: 14.15275px 16.275px;
   font: inherit;
 }
 
@@ -154,17 +154,17 @@ textarea {
 
 button {
   border: none;
-  border-radius: 12px;
+  border-radius: 12.25px;
   background: linear-gradient(135deg, var(--primary), var(--primary-strong));
   color: #0b1020;
   font-weight: 800;
-  padding: 12.25px 18.365px;
+  padding: 12.25px 18.345px;
   cursor: pointer;
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
 button:hover {
-  transform: translateY(-1px);
+  transform: translateY(-1.05px);
 }
 
 button:disabled {
@@ -177,7 +177,7 @@ button:disabled {
   font-size: 0.85rem;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 640.510575px) {
   .topbar {
     flex-direction: column;
     align-items: flex-start;
@@ -189,6 +189,6 @@ button:disabled {
   }
 
   .message {
-    max-width: 100%;
+    max-width: 99.850%;
   }
 }
