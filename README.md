@@ -1,4 +1,4 @@
-# VoxelChat
+# VoxelChat 2.0
 
 A polished, static AI chat and image-generation interface designed for **GitHub Pages**. It discovers model catalogs from OpenAI-compatible providers, including OpenRouter's hundreds of available models, and sends requests directly from your browser.
 
@@ -13,9 +13,9 @@ The site is plain HTML, CSS, and JavaScript—no Node server or build step is re
 
 ## Connect chat models
 
-1. Open **Settings & providers** inside VoxelChat.
+1. Open **Settings & providers** inside VoxelChat 2.0.
 2. Choose **OpenRouter — hundreds of models**, enter an OpenRouter API key, and save.
-3. Use the model selector in the message composer. VoxelChat fetches the provider's live model list; available models depend on your account and provider.
+3. Use the model selector in the message composer. VoxelChat 2.0 fetches the provider's live model list; available models depend on your account and provider.
 
 OpenAI, custom OpenAI-compatible APIs, and local Ollama are also supported. For Ollama, allow the Pages origin in Ollama's `OLLAMA_ORIGINS` configuration and make the local server reachable from the browser. A hosted GitHub Pages site cannot reach another user's localhost unless they configure that local service and browser access.
 
